@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from './Dp 03.png'
 import '../App.css'
-import resume from './DINESHKUMAR P.pdf'
+import resume from './DINESHKUMAR P 01.pdf'
 import swag from './conactimages/swag 01.png'
 import './animations.css'
 function Pro() {
@@ -24,7 +24,11 @@ function Pro() {
         <div className='proanime01 w-[51.4%] max-md:pl-0 max-lg:pl-5 max-md:w-[100%] flex  items-center justify-center relative z-[1]'>
           <div className='max-lg:p-2'>
             <h1 className='text-blue-950 font-[800] text-[35px] max-sm:text-[22px] textchange'>Hey! I'm DINESH</h1>
-           <div className='boom'>
+            <div className='md:hidden'>
+           <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>FRONTEND DEVOLPER</h1>
+          
+           </div>
+           <div className='boom max-md:hidden'>
            <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>FRONTEND DEVOLPER</h1>
            <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>FRONTEND DEVOLPER</h1>
            </div>

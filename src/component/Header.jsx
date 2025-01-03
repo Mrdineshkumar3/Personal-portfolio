@@ -34,22 +34,29 @@ function Header({setDarkmode,darkmode}) {
   
   return (
     <div className={`do ${show?'active' :''}`}>
-        <div className='flex z-10 justify-between max-md:flex-col  showing h-[56px]  py-4 overflow-hidden items-center fixed w-[100%] bgblur headchange '>
+        <div className='flex  z-10 justify-between max-md:flex-col  showing h-[56px]  py-4 overflow-hidden items-center fixed w-[100%] bgblur headchange '>
           <div className='pl-[30px] max-md:place-self-start max-md:mt-[0px]'>
               {/* <img src={logo} alt="" className='w-[100px] '/> */}
              <a href="" className='outline-none'> <h1 className=' text-[18px] cursor-pointer text-blue-950 font-[700] textchange'>DINESH <Icon icon="jam:code" width="20" height="16" className='inline mb-[4px]' /></h1> </a> 
           </div>
-          <div className='pr-[30px] max-md:pr-0  '>
-            <ul className=' '>
+          <div className='pr-[30px] max-md:pr-0 '>
+            <ul className='max-md:hidden'>
               <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd] doom und 'onClick={()=>{setShow(false)} } ><a href="#home">HOME</a></li>
               <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd] doom und' onClick={()=>{setShow(false)}}><a href="#about">ABOUT</a></li>
               <li className='inline max-md:block max-md:text-center py-2  px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd] doom und' onClick={()=>{setShow(false)}}><a href="#skills">SKILLS</a></li>
               <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd] doom und' onClick={()=>{setShow(false)}}><a href="#projects">PROJECTS</a></li>
               <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd] doom und' onClick={()=>{setShow(false)}}><a href="#contact">CONTACT</a></li>
             </ul>
+            <ul className='md:hidden'>
+              <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd]  und 'onClick={()=>{setShow(false)} } ><a href="#home">HOME</a></li>
+              <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd]  und' onClick={()=>{setShow(false)}}><a href="#about">ABOUT</a></li>
+              <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd]  und' onClick={()=>{setShow(false)}}><a href="#skills">SKILLS</a></li>
+              <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd]  und' onClick={()=>{setShow(false)}}><a href="#projects">PROJECTS</a></li>
+              <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd]  und' onClick={()=>{setShow(false)}}><a href="#contact">CONTACT</a></li>
+            </ul>
 
           </div>
-          <div className='md:hidden'>
+          <div className='md:hidden max-md:pb-[100px] '>
           <div className="loader">
   <div className="modelViewPort">
     <div className="eva">

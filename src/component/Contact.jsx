@@ -227,9 +227,9 @@ function Contact() {
           ></path>
         </svg>
       </div>
-      <div className="note overflow-hidden fixed bottom-[20px] rounded w-[300px] right-[20px] bg-[#ecf0f7] shadow  shadow-gray-500">
+      <div className="note overflow-hidden fixed bottom-[20px] rounded w-[300px] right-[20px] bg-[#e8e8e9] shadow  shadow-gray-500">
        
-       <h2 className="text-[18px] text-gray-500 px-6 py-2 font-[500] relative">Message Received <img src={smile} alt="" className="pb-[3px] w-[20px] inline" /> <Icon icon="fxemoji:cancellationx" onClick={()=>{setNo(false) }} className="absolute right-[5px] top-1 text-[10px] cursor-pointer"  /> </h2>
+       <h2 className="text-[18px] text-[#123b57] px-6 py-2 font-[500] relative">Message Received <img src={smile} alt="" className="pb-[3px] w-[20px] inline" /> <Icon icon="fxemoji:cancellationx" onClick={()=>{setNo(false) }} className="absolute right-[5px] top-1 text-[10px] cursor-pointer"  /> </h2>
        
          <p className="h-1  bar"></p>
         
