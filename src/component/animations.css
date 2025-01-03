@@ -1,0 +1,393 @@
+
+.doom{
+position: relative;
+      
+}
+.doom a{
+  color: #fff;
+}
+.doom a:nth-child(1){
+  color: transparent;
+  -webkit-text-stroke: 1px #03a9f4; 
+  letter-spacing: 1px;
+  
+}
+
+
+.boom {
+    position: relative;
+    
+  
+}
+
+.boom h1{
+   
+    color: #fff;
+    
+}
+.boom h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4; 
+    
+    
+}
+.boom h1:nth-child(2){
+    color: #03a9f4;
+    -webkit-text-stroke: 2px #03a9f4; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animate 5s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+      clip-path: polygon(0% 100%, 100% 100%, 100% 57%, 91% 51%, 83% 51%, 77% 49%, 70% 49%, 59% 51%, 50% 53%, 39% 59%, 30% 60%, 24% 60%, 17% 57%, 6% 53%, 0% 51%);    }
+    
+    50%{
+      clip-path: polygon(0 100%, 100% 100%, 100% 53%, 92% 56%, 85% 58%, 76% 59%, 65% 61%, 56% 57%, 49% 55%, 45% 54%, 37% 51%, 32% 49%, 21% 48%, 10% 49%, 0% 51%);
+
+}
+}
+
+/* From Uiverse.io by Subaashbala */ 
+.modelViewPort {
+  /* The black circle background around the model*/
+  perspective: 1000px;
+  width: 20rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #44b3fd;
+  overflow: hidden;
+  transform: scale(0.8);
+}
+
+.eva {
+  --EVA-ROTATION-DURATION: 4s;
+  transform-style: preserve-3d;
+  animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+.head {
+  position: relative;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;
+  background: linear-gradient(to right, white 45%, gray);
+}
+.eyeChamber {
+  width: 4.5rem;
+  height: 2.75rem;
+  position: relative;
+  left: 50%;
+  top: 55%;
+  border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;
+  background-color: #0c203c;
+  box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;
+  transform: translate(-50%, -50%);
+  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+.eye {
+  width: 1.2rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.eye:first-child {
+  left: 12px;
+  top: 50%;
+  background: repeating-linear-gradient(
+    65deg,
+    #9bdaeb 0px,
+    #9bdaeb 1px,
+    white 2px
+  );
+  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+  transform: translate(0, -50%) rotate(-65deg);
+}
+.eye:nth-child(2) {
+  right: 12px;
+  top: 50%;
+  background: repeating-linear-gradient(
+    -65deg,
+    #9bdaeb 0px,
+    #9bdaeb 1px,
+    white 2px
+  );
+  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+  transform: translate(0, -50%) rotate(65deg);
+}
+.body {
+  width: 6rem;
+  height: 8rem;
+  position: relative;
+  margin-block-start: 0.25rem;
+  border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;
+  background: linear-gradient(to right, white 35%, gray);
+}
+.hand {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.75rem;
+  width: 2rem;
+  height: 5.5rem;
+  border-radius: 40%;
+  background: linear-gradient(to left, white 15%, rgba(170, 169, 169, 0.877));
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.055);
+  transform: rotateY(55deg) rotateZ(10deg);
+}
+.hand:first-child {
+  animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite
+    alternate;
+}
+.hand:nth-child(2) {
+  left: 92%;
+  background: linear-gradient(to right, white 15%,rgba(153, 152, 152, 0.877));
+  transform: rotateY(55deg) rotateZ(-10deg);
+  animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear
+    infinite alternate;
+}
+.scannerThing {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  border-top: 180px solid #9bdaeb;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  transform-origin: top left;
+  mask: linear-gradient(to right, white, transparent 35%);
+  animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+.scannerOrigin {
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  left: 60%;
+  top: 10%;
+  background: #9bdaeb;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;
+}
+@keyframes rotateRight {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(25deg);
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-40%, -50%);
+  }
+}
+@keyframes compensateRotation {
+  from {
+    transform: rotateY(55deg) rotateZ(10deg);
+  }
+  to {
+    transform: rotatey(30deg) rotateZ(10deg);
+  }
+}
+@keyframes compensateRotationRight {
+  from {
+    transform: rotateY(55deg) rotateZ(-10deg);
+  }
+  to {
+    transform: rotateY(70deg) rotateZ(-10deg);
+  }
+}
+@keyframes glow {
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  45% {
+    transform: rotate(-25deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+  .dummy{
+    background: linear-gradient(90deg,#00a2ff00,rgba(3, 92, 151, 0.61));
+  }
+
+  .proanime01{
+   animation: lefting 1.5s ease-in-out ;
+   /* animation-timeline: view();
+   animation-range: entry 0% cover 40% ; */
+  }
+  @keyframes lefting {
+    0%{
+      transform: translateX(-500px);
+      opacity: 0.5;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .proanime02{
+    animation: righting 1.7s ease-in-out ;
+  }
+  @keyframes righting {
+    0%{
+      transform: translateX(500px);
+      opacity: 0.5;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .aboutprofile{
+    animation: lefting  ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25% ; 
+  }
+  .abanime01{
+    
+    animation: righting cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-timeline: view();
+    animation-range: entry 0% cover 30% ; 
+  }
+  .opacityanime{
+    animation: opa  ease ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35% ; 
+  }
+  .shapeanime{
+    animation: shaping  ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 55% ; 
+  }
+  .shapeanimei{
+    animation: shapingi  ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35% ; 
+  }
+  
+  @keyframes shaping {
+    0%{
+      
+      transform: translateX(-300px);
+    }
+    100%{
+      
+      transform: translateX(0px);
+    }
+  }
+   
+  @keyframes shapingi {
+    0%{
+      
+      transform: translateX(300px);
+    }
+    100%{
+      
+      transform: translateX(0px);
+    }
+  }
+  @keyframes opa {
+    0%{
+      
+      opacity: 0;
+    }
+    100%{
+      
+      opacity: 1;
+    }
+  }
+  .skillanime{
+    animation: skilling cubic-bezier(0.25, 0.46, 0.45, 0.94) ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35% ; 
+  }
+  @keyframes skilling {
+    0%{
+      transform: translateY(150px) translateX(-100px);
+    }
+    100%{
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+  .headinganime{
+    animation: headheck ease-in ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25% ;  
+  }
+  @keyframes headheck {
+    
+    0%{
+     letter-spacing: 2px;
+    }
+    100%{
+    letter-spacing: 0px;
+    }
+  }
+
+  .projectanime{
+    animation: projecting ease-in ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25% ;  
+  }
+  @keyframes projecting {
+    
+    0%{
+      transform: translateY(100px) scale(0.7);
+    }
+    100%{
+      transform: translateY(0px) scale(1);
+    }
+  }
+  .cantactanime01{
+    animation: lefting ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35% ; 
+  }
+  .cantactanime02{
+    animation: righting ease-in-out ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35% ; 
+  }
+/* From Uiverse.io by Yaya12085 */ 
+.loader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  animation: spin 1s linear infinite;
+  stroke: rgba(107, 114, 128, 1);
+}
+
+.loading-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgba(107, 114, 128, 1);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

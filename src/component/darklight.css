@@ -1,0 +1,81 @@
+.modes.activated{
+    background-color: black;
+}
+.modes.activated .headchange{
+    background-color: black;
+}
+.modes.activated .textchange{
+    color: white;
+}
+.modes.activated .graychange{
+    color: rgb(190, 190, 190);
+}
+.modes.activated .backchange{
+    background-color: rgba(26, 25, 25, 0.856);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(131, 131, 131, 0.295);
+}
+.modes.activated .conchange{
+    background-color:  rgba(26, 25, 25, 0.856);
+}
+.modes.activated .ch:focus{
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.336) ;
+}
+.modes.activated .ch{
+    background-color: rgb(124, 123, 123);
+}
+.modes.activated .ch::placeholder{
+    color: rgb(255, 255, 255);
+}
+.modes.activated .sxs{
+    background-color:  rgb(124, 123, 123);
+}
+.modes.activated .git{
+    color: rgb(255, 255, 255);
+}
+.modes.activated .ww{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.modes.activated .graying{
+    filter: grayscale(0.7);
+    -webkit-filter: invert(55%);
+    filter: invert(55%);
+}
+.modes.activated .button{
+    background: linear-gradient(
+        140deg,
+        rgb(12, 12, 12),
+        rgb(27, 27, 27)
+      );
+}
+.modes.activated .button:active {
+    --text-light: rgb(155, 151, 151);
+  
+    background: linear-gradient(
+      140deg,
+      rgb(12, 12, 12),
+      rgb(27, 27, 27)
+    );
+    box-shadow: inset 0.4px 1px 8px  rgb(12, 12, 12),
+    0px 0px 8px rgb(27, 27, 27);
+}
+.modes.activated .modelViewPort {
+    /* The black circle background around the model*/
+    perspective: 1000px;
+    width: 20rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #012e4d;
+    overflow: hidden;
+    transform: scale(0.8);
+  }
+  .modes.activated .foo{
+    color: white;
+  }
+  .foo::placeholder{
+    font-weight: 400;
+  }
