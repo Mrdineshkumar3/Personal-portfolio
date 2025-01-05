@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Icon } from "@iconify/react";
 import emailjs from "@emailjs/browser";
 import github from "./conactimages/1735286773892.png";
@@ -12,7 +12,12 @@ import rocket from "./conactimages/laptop.png";
 import text from "./conactimages/1735407220054.png";
 import smile from "./conactimages/1735626124230.png";
 import '../App.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Contact() {
+    useEffect(()=>{
+      AOS.init({duration:1000});
+     },[]);
   const form = useRef();
   const [typename,setTypename] = useState('')
   const [typeemail,setTypeemail] = useState('')
@@ -87,7 +92,8 @@ function Contact() {
         </p>
       </div>
       <div className="flex min-h-[60vh] mt-6 max-md:flex-col">
-        <div className="w-[50%] max-md:w-[100%] cantactanime01 ">
+        <div className="w-[50%] max-md:w-[100%] " data-aos="fade-right"
+       data-aos-easing="ease">
           <div className="w-[80%] max-sm:w-[90%] mt-[24px] rounded-md  m-auto bg-gray-200 shadow shadow-[#8a8787e5] conchange min-h-[100px] p-4">
             <h2 className=" text-[#0F1655] font-[600] text-[20px] textchange ">
               Send me a message{" "}
@@ -175,7 +181,8 @@ function Contact() {
             </a>
           </div>
         </div>
-        <div className="w-[50%] max-md:w-[100%] cantactanime02">
+        <div className="w-[50%] max-md:w-[100%] " data-aos="fade-left"
+       data-aos-easing="ease">
           <div className="relative ">
             <div className="flex justify-center">
               <div className="absolute top-6 sxs bg-gray-100 w-[90%] shadow-sm shadow-gray-400 rounded-[5px] px-6  py-2">

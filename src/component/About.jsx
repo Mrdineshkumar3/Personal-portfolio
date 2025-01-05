@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../App.css'
 import profile from './Dp 03.png'
 import art1 from './Tproject-1.jpg'
@@ -10,8 +10,13 @@ import ab from './conactimages/1735389276968.png'
 import creative from './conactimages/1735407219825.png'
 import education from './conactimages/1735407219836.png'
 import certificate from './conactimages/1735407220078.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function About() {
+   useEffect(()=>{
+    AOS.init({duration:500});
+   },[]);
   return (
     <div className='relative overflow-clip' id='about'>
    <div class="custom-shape-divider-top-1735109810 max-md:hidden">
@@ -32,11 +37,14 @@ function About() {
     
 
 <div className='w-[50%] max-md:w-[100%] max-md:px-[20px] px-3 '>
-    <h2 className='font-[700] text-[#0F1655] text-[18px] textchange headinganime'>About ME <img src={ab} alt="" className='inline-block w-[21px] pb-[5px] ml-1' /> </h2>
-    <p className='abanime01 mt-[20px] text-[15px] max-w-[600px] bg-[#f0f3fcb0] border border-[#d3d3d6c0] shad0 p-4 rounded-[4px] backchange'>Hi! I'm <span className='text-[#44b3fd] font-[500]'> DINESHKUMAR P</span>, a final-year B.Tech student specializing in Information Technology. I am passionate about the world of web development, with a particular love for creating beautiful, user-centric websites that offer both functionality and aesthetics. Throughout my academic journey, I’ve honed my skills in front-end developement, along with various web technologies like HTML, CSS, JavaScript,React and Tailwind.</p>
+    <h2 className='font-[700] text-[#0F1655] text-[18px] textchange '>About ME <img src={ab} alt="" className='inline-block w-[21px] pb-[5px] ml-1' /> </h2>
+    <p data-aos="fade-left"
+       data-aos-easing="ease"
+      className=' mt-[20px] text-[15px] max-w-[600px] bg-[#f0f3fcb0] border border-[#d3d3d6c0] shad0 p-4 rounded-[4px] backchange'>Hi! I'm <span className='text-[#44b3fd] font-[500]'> DINESHKUMAR P</span>, a final-year B.Tech student specializing in Information Technology. I am passionate about the world of web development, with a particular love for creating beautiful, user-centric websites that offer both functionality and aesthetics. Throughout my academic journey, I’ve honed my skills in front-end developement, along with various web technologies like HTML, CSS, JavaScript,React and Tailwind.</p>
     <div className='mt-[20px]'>
         <h2 className='font-[500] text-[#0F1655] text-[16px] textchange'>Creative Activity <img src={creative} alt="" className='inline-block w-[20px] pb-[5px] ml-1' /></h2>
-        <p  className='abanime01 mt-[10px] text-[15px] max-w-[600px] bg-[#f0f3fcb0] border border-[#d3d3d6c0] shad0 p-4 rounded-[4px] backchange'>I have a deep passion for graphic design, and one of my favorite creative outlets is using Adobe Photoshop to craft unique posters and logos. This activity allows me to combine my technical skills with artistic expression, producing designs that are both visually striking and conceptually meaningful. For your referance, </p>
+        <p data-aos="fade-left"
+       data-aos-easing="ease"  className=' mt-[10px] text-[15px] max-w-[600px] bg-[#f0f3fcb0] border border-[#d3d3d6c0] shad0 p-4 rounded-[4px] backchange'>I have a deep passion for graphic design, and one of my favorite creative outlets is using Adobe Photoshop to craft unique posters and logos. This activity allows me to combine my technical skills with artistic expression, producing designs that are both visually striking and conceptually meaningful. For your referance, </p>
         <div className='grid grid-cols-2 gap-3 mt-5'>
             <div className=''>
                 <img src={art1} alt=""  className='hover:scale-[1.04] transition opacityanime' />
@@ -55,7 +63,8 @@ function About() {
     </div>
     <div className='mt-[20px]'>
         <h2 className='font-[500] text-[#0F1655] text-[16px] textchange'>Education <img src={education} alt="" className='inline-block w-[20px] pb-[5px] ml-1' /></h2>
-         <div className='abanime01 mt-[10px] bg-[#f0f3fcb0] backchange border border-[#d3d3d6c0] shad0 p-4 rounded-[4px]'>
+         <div data-aos="fade-left"
+       data-aos-easing="ease" className=' mt-[10px] bg-[#f0f3fcb0] backchange border border-[#d3d3d6c0] shad0 p-4 rounded-[4px]'>
          <p className='text-[15px] '>
          Global Institute of Engineering & Teachnology
          </p>
@@ -66,7 +75,9 @@ function About() {
    </div>
    <div className='mt-[20px]'>
         <h2 className='font-[500] text-[#0F1655] text-[16px] textchange'>Certification <img src={certificate} alt="" className='inline-block w-[20px] pb-[5px] ml-1' /></h2>
-         <div className='abanime01 mt-[10px] bg-[#f0f3fcb0] backchange border border-[#d3d3d6c0] shad0 p-4 rounded-[4px]'>
+         <div data-aos="fade-left"
+       data-aos-easing="ease"
+          className='mt-[10px] bg-[#f0f3fcb0] backchange border border-[#d3d3d6c0] shad0 p-4 rounded-[4px]'>
         {/* <img src={pythonintern} alt="Python internship" className='w-[600px] ' /> */}
         <p className='text-[15px] max-w-[600px]  '>Certified in Python Programming by Strydo Technologies PVT. LTD, Demonstrating proficiency and commitment to
         ongoing skill enhancement. <span className='font-[500] pl-[10px]'>(July 2023)</span></p>
