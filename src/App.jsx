@@ -37,7 +37,7 @@ useEffect(()=>{
       <Projects />
       <Contact />
       <Footer/>
-
+  
          
     </div>}
         

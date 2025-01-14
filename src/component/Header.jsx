@@ -39,7 +39,7 @@ function Header({setDarkmode,darkmode}) {
               {/* <img src={logo} alt="" className='w-[100px] '/> */}
              <a href="" className='outline-none'> <h1 className=' text-[18px] cursor-pointer text-blue-950 font-[700] textchange'>DINESH <Icon icon="jam:code" width="20" height="16" className='inline mb-[4px]' /></h1> </a> 
           </div>
-          <div className='pr-[30px] max-md:pr-0 '>
+          <div className='pr-[30px] max-md:pr-0 max-md:pt-5 '>
             <ul className='max-md:hidden'>
               <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd] doom und 'onClick={()=>{setShow(false)} } ><a href="#home">HOME</a></li>
               <li className='inline max-md:block max-md:text-center py-2 px-3 font-[700] text-[18px] cursor-pointer text-[#44b3fd] doom und' onClick={()=>{setShow(false)}}><a href="#about">ABOUT</a></li>
