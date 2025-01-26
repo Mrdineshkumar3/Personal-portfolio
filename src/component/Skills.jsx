@@ -10,6 +10,7 @@ import mysqlimage from './mysql.png'
 import pythonimage from './python.png'
 import nodeimage from './node js.png'
 import photoshop from './photoshop.png'
+import express from './express js.png'
 import mus from './conactimages/1735407220227.png'
 import shape1 from './conactimages/shape 01.png'
 import shape2 from './conactimages/shape 02.png'
@@ -60,9 +61,14 @@ function Skills() {
     name:'NODE JS',
   },
   {
+    logo:express,
+    name:'EXPRESS JS',
+  },
+  {
     logo:photoshop,
     name:'ADOBE PHOTOSHOP',
   },
+
 ]
   return (
     <div className='min-h-[100vh] max-sm:min-h-[60vh] relative pt-[100px] px-[20px] pb-[50px] ' id='skills'>
