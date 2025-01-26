@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import htmlimage from './html.png'
 import cssimage from './css.png'
 import jsimage from './js.png'
@@ -15,10 +15,15 @@ import mus from './conactimages/1735407220227.png'
 import shape1 from './conactimages/shape 01.png'
 import shape2 from './conactimages/shape 02.png'
 import './animations.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import bar from './bar 02.png'
 import '../App.css'
 function Skills() {
+   useEffect(()=>{
+        AOS.init({duration:600});
+       },[]);
   const skillset = [
     {
     logo:htmlimage,
@@ -89,7 +94,7 @@ function Skills() {
         <div className='relative z-[1] grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-2 gap-4 max-sm:gap-3'>
           {skillset.map((item,index)=>{
             return<>
-            <div key={index} className='skillanime shadow shadow-gray-400 hov flex items-center justify-between  bg-[#f7fcfe] p-4 rounded-[20px] '>
+            <div key={index}  data-aos="fade-up-right" className='shadow shadow-gray-400 hov flex items-center justify-between  bg-[#f7fcfe] p-4 rounded-[20px] '>
           
           <div className='flex gap-6 max-sm:gap-2 items-center de'>
           <img src={item.logo} alt="" className='w-[100px]  max-sm:w-[40px]  h-[100px] max-sm:h-[40px]'/>
