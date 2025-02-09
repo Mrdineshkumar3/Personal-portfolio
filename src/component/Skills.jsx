@@ -11,6 +11,7 @@ import pythonimage from './python.png'
 import nodeimage from './node js.png'
 import photoshop from './photoshop.png'
 import express from './express js.png'
+import mongodb from './mongodb.png'
 import mus from './conactimages/1735407220227.png'
 import shape1 from './conactimages/shape 01.png'
 import shape2 from './conactimages/shape 02.png'
@@ -68,6 +69,10 @@ function Skills() {
   {
     logo:express,
     name:'EXPRESS JS',
+  },
+  {
+    logo:mongodb,
+    name:'MONGODB',
   },
   {
     logo:photoshop,
