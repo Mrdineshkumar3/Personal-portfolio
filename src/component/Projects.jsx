@@ -1,5 +1,8 @@
 import React from 'react'
 import zara from './ZARA.png'
+
+import student from './student info portal.png'
+
 import Happy from './Happy Trip Industry.png'
 import Dtool from './d tool.png'
 import Menze from './menze.png'
@@ -10,6 +13,17 @@ import './animations.css'
 function Projects() {
   const Projectsdone = [
     {id:0,
+
+      title:'Student Info Portal',
+      desc:`A web application built to manage and store student-related data efficiently. The system allows users to easily store, retrieve, update, and delete student information
+ `,
+      link:'https://student-portal-frontend-alpha.vercel.app',
+      tech:['MongoDB','Express js','React js','Node js'],
+      image:student,
+ 
+   },
+    {id:1,
+
      title:'Zara',
      desc:`This front-end project is responsive music streaming
            platform.which showcases album art, and trending music.
@@ -19,7 +33,11 @@ function Projects() {
      image:zara,
 
   },
-  {id:1,
+
+
+
+  {id:2,
+
     title:'Happy Trip Industry',
     desc:`This is a responsive travel agency website to enhance customer engagement and
           streamline trip planning.`,
@@ -28,7 +46,9 @@ function Projects() {
     image:Happy,
 
  },
- {id:2,
+ 
+ {id:3,
+
   title:'D Tool',
   desc:`The website is a multifunctional web application providing users with a suite of tools, including a currency
         converter,QR code generator and more.
@@ -38,7 +58,9 @@ function Projects() {
   image:Dtool,
 
 },
-{id:3,
+
+{id:4,
+
   title:'Menze',
   desc:`This is a Frontend men's wear E-Commerce Website,which is a fully responsive all platforms.`,
   link:'https://comforting-piroshki-0bceec.netlify.app',
