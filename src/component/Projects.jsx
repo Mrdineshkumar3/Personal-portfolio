@@ -1,6 +1,7 @@
 import React from 'react'
 import zara from './ZARA.png'
 
+import doc from './doc.png'
 import student from './student info portal.png'
 
 import Happy from './Happy Trip Industry.png'
@@ -12,10 +13,19 @@ import './animations.css'
 
 function Projects() {
   const Projectsdone = [
+       {id:6,
+
+      title:'S a f e',
+      desc:`A web app where patients book doctor appointments and doctors manage their schedules by viewing patients and time slots.`,
+      link:'https://doc-frontend-gamma.vercel.app',
+      tech:['MongoDB','Express js','React js','Node js'],
+      image:doc,
+ 
+   },
     {id:0,
 
       title:'Student Info Portal',
-      desc:`A web application built to manage and store student-related data efficiently. The system allows users to easily store, retrieve, update, and delete student information
+      desc:`A web application built to manage and store student-related data efficiently. The system allows users to easily store, retrieve, update, and delete student information.
  `,
       link:'https://student-portal-frontend-alpha.vercel.app',
       tech:['MongoDB','Express js','React js','Node js'],

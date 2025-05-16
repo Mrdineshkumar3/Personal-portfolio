@@ -6,7 +6,7 @@ import reactimage from './react js.png'
 import tailwindimage from './tailwind css.png'
 import bootstrap from './bootstrap.png'
 import sassimage from './sass.png'
-import mysqlimage from './mysql.png'
+import mysqlimage from './sql.png'
 import pythonimage from './python.png'
 import nodeimage from './node js.png'
 import photoshop from './photoshop.png'
@@ -58,7 +58,7 @@ function Skills() {
   },
     {
     logo:mysqlimage,
-    name:'MYSQL',
+    name:'SQL',
   },
     {
     logo:pythonimage,
