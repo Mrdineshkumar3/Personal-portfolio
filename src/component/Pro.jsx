@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from './Dp 03.png'
 import '../App.css'
-import resume from './DINESHKUMAR P 01.pdf'
+import resume from './DINESHKUMAR P.pdf'
 import swag from './conactimages/swag 01.png'
 import './animations.css'
 function Pro() {
