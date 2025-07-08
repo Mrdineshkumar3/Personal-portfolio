@@ -25,18 +25,17 @@ function Pro() {
           <div className='max-lg:p-2'>
             <h1 className='text-blue-950 font-[800] text-[35px] max-sm:text-[22px] textchange'>Hey! I'm DINESH</h1>
             <div className='md:hidden'>
-           <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>FRONTEND DEVOLPER</h1>
+           <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>WEB DEVOLPER</h1>
           
            </div>
            <div className='boom max-md:hidden'>
-           <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>FRONTEND DEVOLPER</h1>
-           <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>FRONTEND DEVOLPER</h1>
+           <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>WEB DEVOLPER</h1>
+           <h1 className='text-[#44b3fd] font-[800] text-[45px] max-sm:text-[30px] max-lg:text-[35px]'>WEB DEVOLPER</h1>
            </div>
             
             
             <p className='max-w-[450px] max-sm:max-w-[300px] text-[13px] text-[#171927] roboto-condensed-my graychange' > I am passionate about creating beautiful and functional websites, constantly
-                learning and growing in web developement. I look forward to the opportunity to contribute and 
-                gain experience through an internship. 
+                learning and growing in web developement.
             </p>
             {/* <button className='bg-[#44b3fd] mt-[20px] text-white px-4 py-2 rounded-[5px] tracking-[2px]'>DOWNLOAD CV</button> */}
             <button class="custom-btn btn-15 mt-[20px] -z-0 max-md:text-[14px]" onClick={handleDownload}>DOWNLOAD CV</button>
